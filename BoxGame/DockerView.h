@@ -1,5 +1,5 @@
 //
-//  CirclesView.h
+//  DockerView.h
 //  BoxGame
 //
 //  Created by Diana Krasnozhenova on 12/23/14.
@@ -8,9 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CirclesView : UIView {
+@interface DockerView : UIView {
 
     CGPoint position;
+
 }
--(IBAction)start:(id)sender;
+    - (void)drawDockerX:(NSUInteger)x andY: (NSUInteger)y;
+    -(IBAction)start:(id)sender;
+
+
 @end

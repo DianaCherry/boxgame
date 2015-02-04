@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "MapView.h"
+#import "DockerView.h"
 
 @interface ViewController ()
 
@@ -46,15 +47,11 @@
     [entryLabel setFont:[UIFont fontWithName: @"Marker Felt" size: 40.0f]];
     [view addSubview:entryLabel];
     
-    
-    MapView *circle = [[MapView alloc] initWithFrame:CGRectMake(580, 880, 50, 50)];
-    circle.alpha = 0.5;
-    circle.layer.cornerRadius = 50;
-    circle.backgroundColor = [UIColor greenColor];
-    [view addSubview:circle];
-
-
-
+    DockerView *dockerView = [[DockerView alloc] initWithFrame:CGRectMake(550, 850, 100, 100)];
+    dockerView.alpha = 1.0;
+    dockerView.layer.cornerRadius = 100;
+    dockerView.backgroundColor = [UIColor greenColor];
+    [view addSubview:dockerView];
     
     [super viewDidLoad];
 }

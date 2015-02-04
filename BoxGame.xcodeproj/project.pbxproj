@@ -15,7 +15,9 @@
 		8D7B7D821A495B6E0075BF97 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D7B7D801A495B6E0075BF97 /* LaunchScreen.xib */; };
 		8D7B7D8E1A495B6E0075BF97 /* BoxGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7B7D8D1A495B6E0075BF97 /* BoxGameTests.m */; };
 		8D7B7D9C1A4977680075BF97 /* MapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7B7D9B1A4977680075BF97 /* MapView.m */; };
-		8D7B7DA21A499A9C0075BF97 /* CirclesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7B7DA11A499A9C0075BF97 /* CirclesView.m */; };
+		8DC385541A4A0E47001DBCB7 /* BoxesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DC385531A4A0E47001DBCB7 /* BoxesView.m */; };
+		8DC385571A4A0EF7001DBCB7 /* DockerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DC385561A4A0EF7001DBCB7 /* DockerView.m */; };
+		8DC385591A4A227D001DBCB7 /* Boxes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8DC385581A4A227D001DBCB7 /* Boxes.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,8 +46,11 @@
 		8D7B7D8D1A495B6E0075BF97 /* BoxGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BoxGameTests.m; sourceTree = "<group>"; };
 		8D7B7D9A1A4977680075BF97 /* MapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapView.h; sourceTree = "<group>"; };
 		8D7B7D9B1A4977680075BF97 /* MapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapView.m; sourceTree = "<group>"; };
-		8D7B7DA01A499A9C0075BF97 /* CirclesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CirclesView.h; sourceTree = "<group>"; };
-		8D7B7DA11A499A9C0075BF97 /* CirclesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CirclesView.m; sourceTree = "<group>"; };
+		8DC385521A4A0E47001DBCB7 /* BoxesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoxesView.h; sourceTree = "<group>"; };
+		8DC385531A4A0E47001DBCB7 /* BoxesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoxesView.m; sourceTree = "<group>"; };
+		8DC385551A4A0EF7001DBCB7 /* DockerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DockerView.h; sourceTree = "<group>"; };
+		8DC385561A4A0EF7001DBCB7 /* DockerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DockerView.m; sourceTree = "<group>"; };
+		8DC385581A4A227D001DBCB7 /* Boxes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Boxes.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,10 +96,12 @@
 				8D7B7D761A495B6E0075BF97 /* AppDelegate.m */,
 				8D7B7D781A495B6E0075BF97 /* ViewController.h */,
 				8D7B7D791A495B6E0075BF97 /* ViewController.m */,
-				8D7B7DA01A499A9C0075BF97 /* CirclesView.h */,
-				8D7B7DA11A499A9C0075BF97 /* CirclesView.m */,
+				8DC385551A4A0EF7001DBCB7 /* DockerView.h */,
+				8DC385561A4A0EF7001DBCB7 /* DockerView.m */,
 				8D7B7D9A1A4977680075BF97 /* MapView.h */,
 				8D7B7D9B1A4977680075BF97 /* MapView.m */,
+				8DC385521A4A0E47001DBCB7 /* BoxesView.h */,
+				8DC385531A4A0E47001DBCB7 /* BoxesView.m */,
 				8D7B7D7B1A495B6E0075BF97 /* Main.storyboard */,
 				8D7B7D7E1A495B6E0075BF97 /* Images.xcassets */,
 				8D7B7D801A495B6E0075BF97 /* LaunchScreen.xib */,
@@ -107,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				8D7B7D721A495B6E0075BF97 /* Info.plist */,
+				8DC385581A4A227D001DBCB7 /* Boxes.plist */,
 				8D7B7D731A495B6E0075BF97 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -211,6 +219,7 @@
 			files = (
 				8D7B7D7D1A495B6E0075BF97 /* Main.storyboard in Resources */,
 				8D7B7D821A495B6E0075BF97 /* LaunchScreen.xib in Resources */,
+				8DC385591A4A227D001DBCB7 /* Boxes.plist in Resources */,
 				8D7B7D7F1A495B6E0075BF97 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -232,7 +241,8 @@
 				8D7B7D7A1A495B6E0075BF97 /* ViewController.m in Sources */,
 				8D7B7D771A495B6E0075BF97 /* AppDelegate.m in Sources */,
 				8D7B7D741A495B6E0075BF97 /* main.m in Sources */,
-				8D7B7DA21A499A9C0075BF97 /* CirclesView.m in Sources */,
+				8DC385571A4A0EF7001DBCB7 /* DockerView.m in Sources */,
+				8DC385541A4A0E47001DBCB7 /* BoxesView.m in Sources */,
 				8D7B7D9C1A4977680075BF97 /* MapView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,6 +440,7 @@
 				8D7B7D931A495B6E0075BF97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8D7B7D941A495B6E0075BF97 /* Build configuration list for PBXNativeTarget "BoxGameTests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +449,7 @@
 				8D7B7D961A495B6E0075BF97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
