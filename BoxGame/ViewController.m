@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "MapView.h"
 #import "DockerView.h"
+#import "BoxesView.h"
 
 @interface ViewController ()
 
@@ -26,6 +27,8 @@
 
 - (void)viewDidLoad
 {
+    [super viewDidLoad];
+    
     MapView *view = [[MapView alloc]initWithFrame:CGRectMake(10, 30, 730, 980)];
     view.backgroundColor = [UIColor blueColor];
     [self.view addSubview:view];
@@ -38,7 +41,6 @@
     [exitLabel setFont:[UIFont fontWithName: @"Marker Felt" size: 40.0f]];
     [view addSubview:exitLabel];
 
-    
     UILabel *entryLabel = [[UILabel alloc] initWithFrame:CGRectMake(430, 930, 300, 50)];
     
     [entryLabel setTextColor:[UIColor blackColor]];
@@ -53,7 +55,40 @@
     dockerView.backgroundColor = [UIColor greenColor];
     [view addSubview:dockerView];
     
-    [super viewDidLoad];
+    BoxesView *showMap = [[BoxesView alloc] init];
+    NSString *errorDesc = nil;
+    NSPropertyListFormat format;
+    NSString *plistPath;
+    NSString *rootPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+    
+    plistPath = [rootPath stringByAppendingPathComponent:@"Maps.plist"];
+    
+    
+    if (![[NSFileManager defaultManager] fileExistsAtPath:plistPath]) {
+        plistPath = [[NSBundle mainBundle] pathForResource:@"Maps" ofType:@"plist"];
+    }
+    NSData *plistXML = [[NSFileManager defaultManager] contentsAtPath:plistPath];
+    NSDictionary *temp = (NSDictionary *)[NSPropertyListSerialization
+                                          propertyListWithData:plistXML
+                                          options:NSPropertyListMutableContainersAndLeaves
+                                          format:&format
+                                          error:&errorDesc];
+    
+    NSArray *pListArray = [[NSArray alloc] initWithContentsOfFile:plistPath];
+    for (NSArray *array in pListArray) {
+        NSLog(@"x: %@", [array objectAtIndex:0]);
+        NSLog(@"y: %@", [array objectAtIndex:1]);
+        
+        BoxesView *boxesView = [[BoxesView alloc] initWithFrame:CGRectMake([[array objectAtIndex:0] floatValue],[[array objectAtIndex:1] floatValue],80,80)];
+        boxesView.backgroundColor = [UIColor yellowColor];
+        [view addSubview:boxesView];
+
+    }
+    
+    if (!temp) {
+        NSLog(@"Error reading plist: %@, format: %d", errorDesc, format);
+    }
+
 }
 
 

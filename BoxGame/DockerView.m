@@ -7,9 +7,7 @@
 //
 
 #import "DockerView.h"
-#import <SpriteKit/SpriteKit.h>
 #import <SpriteKit/SKAction.h>
-#import <QuartzCore/QuartzCore.h>
 #import "MapView.h"
 
 @implementation DockerView

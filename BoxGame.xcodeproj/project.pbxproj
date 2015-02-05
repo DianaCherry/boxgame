@@ -15,9 +15,9 @@
 		8D7B7D821A495B6E0075BF97 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D7B7D801A495B6E0075BF97 /* LaunchScreen.xib */; };
 		8D7B7D8E1A495B6E0075BF97 /* BoxGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7B7D8D1A495B6E0075BF97 /* BoxGameTests.m */; };
 		8D7B7D9C1A4977680075BF97 /* MapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7B7D9B1A4977680075BF97 /* MapView.m */; };
+		8DB1A5281A82550400FA8BB7 /* Maps.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8DB1A5271A82550400FA8BB7 /* Maps.plist */; };
 		8DC385541A4A0E47001DBCB7 /* BoxesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DC385531A4A0E47001DBCB7 /* BoxesView.m */; };
 		8DC385571A4A0EF7001DBCB7 /* DockerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DC385561A4A0EF7001DBCB7 /* DockerView.m */; };
-		8DC385591A4A227D001DBCB7 /* Boxes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8DC385581A4A227D001DBCB7 /* Boxes.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,11 +46,11 @@
 		8D7B7D8D1A495B6E0075BF97 /* BoxGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BoxGameTests.m; sourceTree = "<group>"; };
 		8D7B7D9A1A4977680075BF97 /* MapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapView.h; sourceTree = "<group>"; };
 		8D7B7D9B1A4977680075BF97 /* MapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapView.m; sourceTree = "<group>"; };
+		8DB1A5271A82550400FA8BB7 /* Maps.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Maps.plist; sourceTree = "<group>"; };
 		8DC385521A4A0E47001DBCB7 /* BoxesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoxesView.h; sourceTree = "<group>"; };
 		8DC385531A4A0E47001DBCB7 /* BoxesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoxesView.m; sourceTree = "<group>"; };
 		8DC385551A4A0EF7001DBCB7 /* DockerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DockerView.h; sourceTree = "<group>"; };
 		8DC385561A4A0EF7001DBCB7 /* DockerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DockerView.m; sourceTree = "<group>"; };
-		8DC385581A4A227D001DBCB7 /* Boxes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Boxes.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,7 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				8D7B7D721A495B6E0075BF97 /* Info.plist */,
-				8DC385581A4A227D001DBCB7 /* Boxes.plist */,
+				8DB1A5271A82550400FA8BB7 /* Maps.plist */,
 				8D7B7D731A495B6E0075BF97 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -219,8 +219,8 @@
 			files = (
 				8D7B7D7D1A495B6E0075BF97 /* Main.storyboard in Resources */,
 				8D7B7D821A495B6E0075BF97 /* LaunchScreen.xib in Resources */,
-				8DC385591A4A227D001DBCB7 /* Boxes.plist in Resources */,
 				8D7B7D7F1A495B6E0075BF97 /* Images.xcassets in Resources */,
+				8DB1A5281A82550400FA8BB7 /* Maps.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

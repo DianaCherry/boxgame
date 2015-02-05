@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>3F90AA01-9CF1-4CF7-B17E-149E6125C434</string>
+	<key>IDESourceControlProjectName</key>
+	<string>BoxGame</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>A72413030DE58EBA79BB6711AED1C0BF20ACEC68</key>
+		<string>https://github.com/DianaCherry/boxgame.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>BoxGame.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>A72413030DE58EBA79BB6711AED1C0BF20ACEC68</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/DianaCherry/boxgame.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>A72413030DE58EBA79BB6711AED1C0BF20ACEC68</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A72413030DE58EBA79BB6711AED1C0BF20ACEC68</string>
+			<key>IDESourceControlWCCName</key>
+			<string>BoxGame</string>
+		</dict>
+	</array>
+</dict>
+</plist>
