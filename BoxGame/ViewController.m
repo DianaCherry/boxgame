@@ -41,6 +41,12 @@
     [exitLabel setFont:[UIFont fontWithName: @"Marker Felt" size: 40.0f]];
     [view addSubview:exitLabel];
 
+    DockerView *dockerView = [[DockerView alloc] initWithFrame:CGRectMake(550, 850, 100, 100)];
+    dockerView.alpha = 1.0;
+    dockerView.layer.cornerRadius = 50;
+    dockerView.backgroundColor = [UIColor greenColor];
+    [view addSubview:dockerView];
+    
     UILabel *entryLabel = [[UILabel alloc] initWithFrame:CGRectMake(430, 930, 300, 50)];
     
     [entryLabel setTextColor:[UIColor blackColor]];
@@ -49,13 +55,7 @@
     [entryLabel setFont:[UIFont fontWithName: @"Marker Felt" size: 40.0f]];
     [view addSubview:entryLabel];
     
-    DockerView *dockerView = [[DockerView alloc] initWithFrame:CGRectMake(550, 850, 100, 100)];
-    dockerView.alpha = 1.0;
-    dockerView.layer.cornerRadius = 100;
-    dockerView.backgroundColor = [UIColor greenColor];
-    [view addSubview:dockerView];
     
-    BoxesView *showMap = [[BoxesView alloc] init];
     NSString *errorDesc = nil;
     NSPropertyListFormat format;
     NSString *plistPath;
@@ -82,13 +82,20 @@
         BoxesView *boxesView = [[BoxesView alloc] initWithFrame:CGRectMake([[array objectAtIndex:0] floatValue],[[array objectAtIndex:1] floatValue],80,80)];
         boxesView.backgroundColor = [UIColor yellowColor];
         [view addSubview:boxesView];
-
     }
     
     if (!temp) {
         NSLog(@"Error reading plist: %@, format: %d", errorDesc, format);
     }
+    /*
+    UIViewController *controller = [[UIViewController alloc]init];
+    BoxesView *box = [[BoxesView alloc]init];
+    self.boxesView = [[BoxesView alloc] init];
+    [self.boxesView drawBox:box];
+    [controller.view addSubview:self.boxesView];
+    */
 
+     
 }
 
 

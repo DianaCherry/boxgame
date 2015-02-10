@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+@class BoxesView;
+
 @interface ViewController : UIViewController
 
+@property (strong, nonatomic) BoxesView *boxesView;
 
 @end
 

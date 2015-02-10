@@ -28,7 +28,7 @@
     circle.alpha = 0.5;
     circle.layer.cornerRadius = 100;
     circle.backgroundColor = [UIColor greenColor];
-}
+    }
 
 - (void) dockerMove {
     

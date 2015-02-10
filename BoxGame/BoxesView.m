@@ -10,6 +10,10 @@
 
 @implementation BoxesView
 
+- (void)drawBox:(BoxesView *)box {
 
+}
 
 @end
+
+

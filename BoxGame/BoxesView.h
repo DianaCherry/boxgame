@@ -10,6 +10,6 @@
 
 @interface BoxesView : UIView
 
-    - (void)drawBox:(CGRect)rect;
+- (void)drawBox:(BoxesView *)box;
 
 @end
