@@ -55,6 +55,13 @@
     [entryLabel setFont:[UIFont fontWithName: @"Marker Felt" size: 40.0f]];
     [view addSubview:entryLabel];
     
+    /*
+     UIViewController *controller = [[UIViewController alloc]init];
+     BoxesView *box = [[BoxesView alloc]init];
+     self.boxesView = [[BoxesView alloc] init];
+     [self.boxesView drawBox:box];
+     [controller.view addSubview:self.boxesView];
+     */
     
     NSString *errorDesc = nil;
     NSPropertyListFormat format;
@@ -62,7 +69,6 @@
     NSString *rootPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
     
     plistPath = [rootPath stringByAppendingPathComponent:@"Maps.plist"];
-    
     
     if (![[NSFileManager defaultManager] fileExistsAtPath:plistPath]) {
         plistPath = [[NSBundle mainBundle] pathForResource:@"Maps" ofType:@"plist"];
@@ -75,6 +81,7 @@
                                           error:&errorDesc];
     
     NSArray *pListArray = [[NSArray alloc] initWithContentsOfFile:plistPath];
+    
     for (NSArray *array in pListArray) {
         NSLog(@"x: %@", [array objectAtIndex:0]);
         NSLog(@"y: %@", [array objectAtIndex:1]);
@@ -87,16 +94,5 @@
     if (!temp) {
         NSLog(@"Error reading plist: %@, format: %d", errorDesc, format);
     }
-    /*
-    UIViewController *controller = [[UIViewController alloc]init];
-    BoxesView *box = [[BoxesView alloc]init];
-    self.boxesView = [[BoxesView alloc] init];
-    [self.boxesView drawBox:box];
-    [controller.view addSubview:self.boxesView];
-    */
-
-     
 }
-
-
 @end

@@ -16,7 +16,6 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        // Initialization code
     }
     return self;
 }
@@ -32,18 +31,14 @@
 
 - (void) dockerMove {
     
-    
     SKAction *up      = [SKAction moveByX:0 y: 100 duration:1];
     SKAction *down    = [SKAction moveByX:0 y:-100 duration:1];
     SKAction *action1 = [SKAction repeatActionForever:[SKAction sequence:@[up, down]]];
-    
     SKAction *action2 = [SKAction moveByX:200 y:0 duration:5];
-    
     SKAction *group = [SKAction group:@[action1, action2]];
 }
 
 - (IBAction)start:(id)sender {
     position = CGPointMake (580, 880);
 }
-
 @end

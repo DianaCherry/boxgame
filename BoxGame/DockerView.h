@@ -9,12 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface DockerView : UIView {
-
     CGPoint position;
-
 }
     - (void)drawDockerX:(NSUInteger)x andY: (NSUInteger)y;
     -(IBAction)start:(id)sender;
-
 
 @end
